@@ -1,0 +1,7 @@
+mixin item(args={})
+		.items-column
+			.item
+				.item__img-wrap
+					img(src=args.img, alt="logo").item__img
+				.item__title(class=args.title_mod)=args.title
+				.item__description=args.description

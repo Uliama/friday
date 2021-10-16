@@ -1,0 +1,37 @@
+form(action="a")
+  label(for="comment") Введите комментарий
+    br
+    textarea#comment(name="comment", cols="30", rows="10")
+  br
+  label Выберите год:
+  br
+  select(name="years" multiple)
+    option(value="1991") year 1991
+    option(value="1992") year 1992
+  br
+  label(for="info") Введите информацию
+  br
+  input#info(type="file" name="info" multiple)
+  br
+  label
+    input(type="checkbox" name="data")
+    span text 1
+  br
+  label
+    input(type="checkbox" name="data")
+    span text 2
+  br
+  label
+    input(type="checkbox" name="data")
+    span text 3
+  br
+  label
+    input(type="checkbox" name="data")
+    span text 4
+  br
+  button(type="submit") Отправить
+
+  form(action="#")
+  label.toogle
+    input(type="checkbox" name="toogle").toogle__field
+    span.toogle__text ok
